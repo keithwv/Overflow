@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed10a1c2-937c-4e0a-ac86-d5843f9697fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Common/AuthExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Overflow.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchService/SearchService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/SearchService.csproj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="1670" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {}
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/keithwv/Overflow.git&quot;,
+    &quot;accountId&quot;: &quot;971c8f87-016f-40e0-810a-2c2b6348550c&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Bk9lEl3GQClmm5GSt6xX7ZuOlU" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/admin/Desktop/AspireCourse/demo/Overflow",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-WS-261.22158.274" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed10a1c2-937c-4e0a-ac86-d5843f9697fd" name="Changes" comment="" />
+      <created>1775022351436</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775022351436</updated>
+      <workItem from="1775022354515" duration="1165000" />
+      <workItem from="1775418739754" duration="1342000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
