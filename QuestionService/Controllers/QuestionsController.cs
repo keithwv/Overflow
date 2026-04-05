@@ -188,7 +188,7 @@ public class QuestionsController(QuestionDbContext db, IMessageBus bus, TagServi
     }
 
     [Authorize]
-    [HttpPost("questions/{questionId}/answer/{answerId}/accept")]
+    [HttpPost("{questionId}/answers/{answerId}/accept")]
     public async Task<ActionResult> AcceptAnswer(string questionId, string answerId)
     {
         var answer = await db.Answers.FindAsync(answerId);
@@ -203,5 +203,22 @@ public class QuestionsController(QuestionDbContext db, IMessageBus bus, TagServi
 
         await bus.PublishAsync(new AnswerAccepted(questionId));
         return NoContent();
+    }
+
+    [HttpGet("errors")]
+    public ActionResult GetErrorResponses(int code)
+    {
+        ModelState.AddModelError("Problem one", "Validation problem one");
+        ModelState.AddModelError("Problem two", "Validation problem two");
+
+        return code switch
+        {
+            400 => BadRequest("Opposite of good request"),
+            401 => Unauthorized(),
+            403 => Forbid(),
+            404 => NotFound(),
+            500 => throw new Exception("This is a server error"),
+            _ => ValidationProblem(ModelState)
+        };
     }
 }
