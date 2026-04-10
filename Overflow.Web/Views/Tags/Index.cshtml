@@ -1,0 +1,39 @@
+@model List<Overflow.Web.Models.TagViewModel>
+@{
+    ViewData["Title"] = "Tags";
+}
+
+<div class="page-header d-flex align-items-center justify-content-between">
+    <div>
+        <h1>Tags</h1>
+        <span class="text-muted small">@Model.Count tag@(Model.Count == 1 ? "" : "s")</span>
+    </div>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="empty-state">
+        <div class="empty-icon">🏷️</div>
+        <p class="fw-semibold">No tags yet</p>
+        <p class="text-muted">Tags will appear here once questions are tagged.</p>
+    </div>
+}
+else
+{
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+        @foreach (var tag in Model.OrderBy(t => t.Name))
+        {
+            <div class="col">
+                <div class="tag-card">
+                    <a class="tag-badge tag-name d-inline-block mb-2" asp-controller="Questions" asp-action="Index" asp-route-tag="@tag.Slug">
+                        @tag.Name
+                    </a>
+                    @if (!string.IsNullOrWhiteSpace(tag.Description))
+                    {
+                        <div class="tag-description">@tag.Description</div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+}

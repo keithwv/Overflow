@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Cont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{0BE9F83B-36D3-45E5-B4C8-0326892654F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Overflow.Web", "Overflow.Web\Overflow.Web.csproj", "{06903E7A-A376-4F89-A3FD-696A974CEF44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -98,6 +100,18 @@ Global
 		{0BE9F83B-36D3-45E5-B4C8-0326892654F3}.Release|x64.Build.0 = Release|Any CPU
 		{0BE9F83B-36D3-45E5-B4C8-0326892654F3}.Release|x86.ActiveCfg = Release|Any CPU
 		{0BE9F83B-36D3-45E5-B4C8-0326892654F3}.Release|x86.Build.0 = Release|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Debug|x64.Build.0 = Debug|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Debug|x86.Build.0 = Debug|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Release|x64.ActiveCfg = Release|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Release|x64.Build.0 = Release|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Release|x86.ActiveCfg = Release|Any CPU
+		{06903E7A-A376-4F89-A3FD-696A974CEF44}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

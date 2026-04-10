@@ -1,0 +1,499 @@
+/* ============================================================
+   CSS Custom Properties — Light & Dark Theme
+   ============================================================ */
+:root,
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-surface: #f6f8fa;
+    --color-surface-raised: #ffffff;
+    --color-border: #d0d7de;
+    --color-text: #1f2328;
+    --color-text-muted: #656d76;
+    --color-link: #0969da;
+    --color-link-hover: #0550ae;
+    --color-accent: #f5a623;
+    --color-tag-bg: #ddf4ff;
+    --color-tag-text: #0550ae;
+    --color-tag-border: #54aeff;
+    --color-answer-bg: #f6fff6;
+    --color-answer-border: #2da44e;
+    --color-accepted-bg: #dafbe1;
+    --color-accepted-text: #1a7f37;
+    --color-input-bg: #ffffff;
+    --color-input-border: #d0d7de;
+    --color-navbar-bg: #ffffff;
+    --color-navbar-border: #d0d7de;
+    --color-footer-bg: #f6f8fa;
+    --color-code-bg: #f6f8fa;
+    --color-shadow: rgba(31,35,40,0.1);
+    --color-vote-bg: #f6f8fa;
+    --color-vote-text: #656d76;
+}
+
+[data-theme="dark"] {
+    --color-bg: #0d1117;
+    --color-surface: #161b22;
+    --color-surface-raised: #1c2128;
+    --color-border: #30363d;
+    --color-text: #e6edf3;
+    --color-text-muted: #8b949e;
+    --color-link: #58a6ff;
+    --color-link-hover: #79c0ff;
+    --color-accent: #f5a623;
+    --color-tag-bg: #1f3b5c;
+    --color-tag-text: #79c0ff;
+    --color-tag-border: #1f6feb;
+    --color-answer-bg: #122d1f;
+    --color-answer-border: #2ea043;
+    --color-accepted-bg: #1a3829;
+    --color-accepted-text: #3fb950;
+    --color-input-bg: #0d1117;
+    --color-input-border: #30363d;
+    --color-navbar-bg: #161b22;
+    --color-navbar-border: #30363d;
+    --color-footer-bg: #161b22;
+    --color-code-bg: #161b22;
+    --color-shadow: rgba(0,0,0,0.4);
+    --color-vote-bg: #1c2128;
+    --color-vote-text: #8b949e;
+}
+
+/* ============================================================
+   Base Styles
+   ============================================================ */
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+/* ============================================================
+   Navigation
+   ============================================================ */
+.navbar {
+    background-color: var(--color-navbar-bg) !important;
+    border-color: var(--color-navbar-border) !important;
+    transition: background-color 0.25s ease;
+}
+
+.navbar-brand {
+    color: var(--color-text) !important;
+    font-size: 1.25rem;
+}
+
+.nav-link {
+    color: var(--color-text) !important;
+}
+
+.nav-link:hover {
+    color: var(--color-link) !important;
+}
+
+.navbar-toggler-icon {
+    filter: var(--navbar-toggler-filter, none);
+}
+
+[data-theme="dark"] .navbar-toggler {
+    border-color: var(--color-border);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-text-muted);
+    border-color: var(--color-border) !important;
+}
+
+/* ============================================================
+   Cards & Surfaces
+   ============================================================ */
+.card,
+.question-card {
+    background-color: var(--color-surface-raised);
+    border-color: var(--color-border) !important;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.card-body {
+    color: var(--color-text);
+}
+
+/* ============================================================
+   Question List
+   ============================================================ */
+.question-item {
+    background-color: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-item:hover {
+    box-shadow: 0 2px 8px var(--color-shadow);
+    border-color: var(--color-link);
+}
+
+.question-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.question-title:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}
+
+.question-meta {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.question-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.question-stats .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 48px;
+    background-color: var(--color-vote-bg);
+    color: var(--color-vote-text);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+}
+
+.question-stats .stat .stat-value {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.question-stats .stat.has-accepted {
+    background-color: var(--color-accepted-bg);
+    border-color: var(--color-answer-border);
+    color: var(--color-accepted-text);
+}
+
+.question-stats .stat.has-accepted .stat-value {
+    color: var(--color-accepted-text);
+}
+
+/* ============================================================
+   Tags
+   ============================================================ */
+.tag-badge {
+    display: inline-block;
+    background-color: var(--color-tag-bg);
+    color: var(--color-tag-text);
+    border: 1px solid var(--color-tag-border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tag-badge:hover {
+    background-color: var(--color-tag-border);
+    color: var(--color-bg);
+    text-decoration: none;
+}
+
+.tag-card {
+    background-color: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tag-card:hover {
+    box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.tag-card .tag-name {
+    font-weight: 600;
+    color: var(--color-link);
+    font-size: 1rem;
+}
+
+.tag-card .tag-description {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-top: 0.4rem;
+}
+
+/* ============================================================
+   Question Detail
+   ============================================================ */
+.question-detail-header {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.question-body,
+.answer-body {
+    color: var(--color-text);
+    line-height: 1.7;
+}
+
+.question-body pre,
+.answer-body pre {
+    background-color: var(--color-code-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.question-body code,
+.answer-body code {
+    background-color: var(--color-code-bg);
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-size: 0.9em;
+    color: var(--color-text);
+}
+
+.answers-section {
+    margin-top: 2rem;
+}
+
+.answer-item {
+    background-color: var(--color-answer-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.answer-item.accepted {
+    background-color: var(--color-accepted-bg);
+    border-color: var(--color-answer-border);
+}
+
+.answer-accepted-badge {
+    color: var(--color-accepted-text);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* ============================================================
+   Search
+   ============================================================ */
+.search-result-item {
+    background-color: var(--color-surface-raised);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-result-item:hover {
+    box-shadow: 0 2px 8px var(--color-shadow);
+    border-color: var(--color-link);
+}
+
+.search-result-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.search-result-title:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}
+
+.search-result-excerpt {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-top: 0.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ============================================================
+   Forms & Inputs
+   ============================================================ */
+.form-control,
+.form-select {
+    background-color: var(--color-input-bg);
+    color: var(--color-text);
+    border-color: var(--color-input-border);
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--color-input-bg);
+    color: var(--color-text);
+    border-color: var(--color-link);
+    box-shadow: 0 0 0 0.2rem rgba(9, 105, 218, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--color-text-muted);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: var(--color-text-muted);
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem var(--color-bg), 0 0 0 0.25rem var(--color-link);
+}
+
+.btn-outline-secondary {
+    color: var(--color-text-muted);
+    border-color: var(--color-border);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    border-color: var(--color-border);
+}
+
+/* ============================================================
+   Alerts & Badges
+   ============================================================ */
+.badge.bg-secondary {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text-muted) !important;
+    border: 1px solid var(--color-border);
+}
+
+/* ============================================================
+   Theme Toggle Button
+   ============================================================ */
+#theme-toggle {
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+#theme-toggle:hover {
+    background-color: var(--color-surface) !important;
+    transform: scale(1.1);
+}
+
+/* ============================================================
+   Page Headers
+   ============================================================ */
+.page-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.page-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+}
+
+/* ============================================================
+   Empty State
+   ============================================================ */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--color-text-muted);
+}
+
+.empty-state .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* ============================================================
+   Bootstrap overrides for dark mode
+   ============================================================ */
+[data-theme="dark"] .border,
+[data-theme="dark"] .border-top,
+[data-theme="dark"] .border-bottom {
+    border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .text-muted {
+    color: var(--color-text-muted) !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: var(--color-surface) !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: var(--color-surface-raised) !important;
+}
+
+/* Smooth transitions for theme switching - scoped to specific properties */
+body,
+.navbar,
+.footer,
+.card,
+.question-item,
+.tag-card,
+.search-result-item,
+.answer-item,
+.question-detail-header,
+.form-control,
+.form-select,
+.btn-outline-secondary,
+.tag-badge {
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}

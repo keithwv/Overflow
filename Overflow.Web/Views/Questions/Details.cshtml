@@ -1,0 +1,80 @@
+@model Overflow.Web.Models.QuestionViewModel
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="question-detail-header">
+    <h1 class="fs-3 fw-bold mb-2">@Model.Title</h1>
+    <div class="d-flex align-items-center gap-3 flex-wrap question-meta">
+        <span>Asked <strong>@Model.CreatedAt.ToString("MMM d, yyyy")</strong></span>
+        @if (Model.UpdatedAt.HasValue)
+        {
+            <span>Modified <strong>@Model.UpdatedAt.Value.ToString("MMM d, yyyy")</strong></span>
+        }
+        <span>Viewed <strong>@Model.ViewCount</strong> time@(Model.ViewCount == 1 ? "" : "s")</span>
+    </div>
+</div>
+
+<div class="d-flex gap-4">
+    <!-- Vote column -->
+    <div class="d-flex flex-column align-items-center gap-2 flex-shrink-0" style="min-width: 48px;">
+        <button class="btn btn-outline-secondary btn-sm" title="This question is useful" disabled>▲</button>
+        <span class="fw-bold fs-5 text-center" style="color: var(--color-text);">@Model.Votes</span>
+        <button class="btn btn-outline-secondary btn-sm" title="This question is not useful" disabled>▼</button>
+    </div>
+
+    <!-- Question body -->
+    <div class="flex-grow-1">
+        <div class="question-body mb-3">
+            @Html.Raw(System.Web.HttpUtility.HtmlEncode(Model.Content).Replace("\n", "<br/>"))
+        </div>
+        <div class="d-flex flex-wrap gap-1 mb-3">
+            @foreach (var tag in Model.TagSlugs)
+            {
+                <a class="tag-badge" asp-controller="Questions" asp-action="Index" asp-route-tag="@tag">@tag</a>
+            }
+        </div>
+        <div class="question-meta text-end">
+            Asked by <strong>@Model.AskerDisplayName</strong> on @Model.CreatedAt.ToString("MMM d, yyyy 'at' HH:mm")
+        </div>
+    </div>
+</div>
+
+<!-- Answers -->
+<div class="answers-section">
+    <h2 class="fs-5 fw-bold mb-3" style="border-bottom: 1px solid var(--color-border); padding-bottom: .5rem;">
+        @Model.AnswerCount Answer@(Model.AnswerCount == 1 ? "" : "s")
+    </h2>
+
+    @if (!Model.Answers.Any())
+    {
+        <div class="empty-state">
+            <div class="empty-icon">🤔</div>
+            <p class="text-muted">No answers yet. Be the first to answer!</p>
+        </div>
+    }
+    else
+    {
+        @foreach (var answer in Model.Answers.OrderByDescending(a => a.Accepted).ThenBy(a => a.CreatedAt))
+        {
+            <div class="answer-item @(answer.Accepted ? "accepted" : "")">
+                @if (answer.Accepted)
+                {
+                    <div class="answer-accepted-badge mb-2">✓ Accepted Answer</div>
+                }
+                <div class="answer-body mb-2">
+                    @Html.Raw(System.Web.HttpUtility.HtmlEncode(answer.Content).Replace("\n", "<br/>"))
+                </div>
+                <div class="question-meta text-end">
+                    Answered by <strong>@answer.UserDisplayName</strong> on @answer.CreatedAt.ToString("MMM d, yyyy 'at' HH:mm")
+                </div>
+            </div>
+        }
+    }
+</div>
+
+<div class="mt-3">
+    <a asp-controller="Questions" asp-action="Index" class="btn btn-outline-secondary btn-sm">
+        ← Back to Questions
+    </a>
+</div>

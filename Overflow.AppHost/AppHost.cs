@@ -66,6 +66,13 @@ var yarp = builder.AddYarp("gateway")
     .WithEnvironment("VIRTUAL_HOST", "api.overflow.local")
     .WithEnvironment("VIRTUAL_PORT", "8001");
 
+var web = builder.AddProject<Projects.Overflow_Web>("web")
+    .WithReference(yarp)
+    .WaitFor(yarp)
+    .WithExternalHttpEndpoints()
+    .WithEnvironment("VIRTUAL_HOST", "overflow.local")
+    .WithEnvironment("VIRTUAL_PORT", "8080");
+
 if (!builder.Environment.IsDevelopment())
 {
     builder.AddContainer("nginx-proxy", "nginxproxy/nginx-proxy", "1.9")

@@ -1,0 +1,60 @@
+@model List<Overflow.Web.Models.SearchResultViewModel>
+@{
+    ViewData["Title"] = "Search";
+    var query = ViewBag.Query as string;
+}
+
+<div class="page-header">
+    <h1>Search</h1>
+</div>
+
+<form asp-controller="Search" asp-action="Index" method="get" class="mb-4">
+    <div class="input-group">
+        <input type="search" class="form-control" name="query" value="@query"
+               placeholder="Search questions… Use [tag] syntax to filter by tag, e.g. [aspire] .NET" />
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+    <div class="form-text text-muted">
+        Tip: Use <code class="tag-badge">[tagname]</code> in your query to filter by tag.
+    </div>
+</form>
+
+@if (!string.IsNullOrWhiteSpace(query))
+{
+    <div class="mb-3">
+        <span class="text-muted small">
+            @Model.Count result@(Model.Count == 1 ? "" : "s") for
+            <strong>&ldquo;@query&rdquo;</strong>
+        </span>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="empty-state">
+            <div class="empty-icon">🔍</div>
+            <p class="fw-semibold">No results found</p>
+            <p class="text-muted">Try different keywords or remove tag filters.</p>
+        </div>
+    }
+    else
+    {
+        foreach (var result in Model)
+        {
+            <div class="search-result-item">
+                <a class="search-result-title" asp-controller="Questions" asp-action="Details" asp-route-id="@result.Id">
+                    @result.Title
+                </a>
+                @if (!string.IsNullOrWhiteSpace(result.Content))
+                {
+                    <div class="search-result-excerpt">@result.Content</div>
+                }
+                <div class="mt-1">
+                    @foreach (var tag in result.Tags)
+                    {
+                        <a class="tag-badge me-1" asp-controller="Questions" asp-action="Index" asp-route-tag="@tag">@tag</a>
+                    }
+                </div>
+            </div>
+        }
+    }
+}
