@@ -4,20 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed10a1c2-937c-4e0a-ac86-d5843f9697fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Common/AuthExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/indexLayout.xml" afterDir="false" />
+    <list default="true" id="ed10a1c2-937c-4e0a-ac86-d5843f9697fd" name="Changes" comment="End of section 7">
+      <change afterPath="$PROJECT_DIR$/.idea/fileColors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/clsx.d.mts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/clsx.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/dist/clsx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/dist/clsx.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/dist/clsx.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/dist/lite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/dist/lite.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clsx/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/CLAUDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/eslint.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/next.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/postcss.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/public/file.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/public/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/public/next.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/public/window.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/hero.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/not-found.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswersHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/VotingButtons.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/LinkComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/SideMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/ThemeToggle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/Overflow.AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Controllers/QuestionsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/QuestionService/QuestionService.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/SearchService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/SearchService.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +70,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="1670" />
+    <option name="cachedIndexableFilesCount" value="1715" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/keithwv/Overflow.git&quot;,
@@ -42,6 +87,9 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
@@ -53,30 +101,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/admin/Desktop/AspireCourse/demo/Overflow",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Desktop/AspireCourse/demo/Overflow&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\admin\\Desktop\\AspireCourse\\demo\\Overflow\\webapp\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\admin\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="58f07db2-f99d-4082-a48e-bca3d5116e48" />
+        <option name="reportName" value="Overflow/qodana/2026-04-11" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\admin\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="58f07db2-f99d-4082-a48e-bca3d5116e48" reportId="Overflow/qodana/2026-04-11" />
+    </option>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -92,11 +159,52 @@
       <option name="presentableId" value="Default" />
       <updated>1775022351436</updated>
       <workItem from="1775022354515" duration="1165000" />
-      <workItem from="1775418739754" duration="1342000" />
+      <workItem from="1775418739754" duration="6875000" />
+      <workItem from="1775622987430" duration="673000" />
+      <workItem from="1775623758882" duration="4305000" />
+      <workItem from="1775798890887" duration="9726000" />
+      <workItem from="1775959471401" duration="11271000" />
+      <workItem from="1776019244991" duration="174000" />
+      <workItem from="1776019462652" duration="1510000" />
+      <workItem from="1776021877836" duration="288000" />
+      <workItem from="1776022178682" duration="1732000" />
     </task>
+    <task id="LOCAL-00001" summary="End of section 6">
+      <option name="closed" value="true" />
+      <created>1775421144257</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775421144257</updated>
+    </task>
+    <task id="LOCAL-00002" summary="End of section 6">
+      <option name="closed" value="true" />
+      <created>1775421161216</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775421161216</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="End of section 6" />
+    <MESSAGE value="End of section 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 7" />
   </component>
 </project>

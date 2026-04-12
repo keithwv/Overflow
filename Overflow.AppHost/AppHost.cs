@@ -5,12 +5,11 @@ var builder = DistributedApplication.CreateBuilder(args);
 var compose = builder.AddDockerComposeEnvironment("production")
     .WithDashboard(dashboard => dashboard.WithHostPort(8080));
 
-var keycloak = builder.AddKeycloak("keycloak")
+var keycloak = builder.AddKeycloak("keycloak", 6001)
     .WithDataVolume("keycloak-data")
     .WithRealmImport("../infra/realms")
     .WithEnvironment("KC_HTTP_ENABLED", "true")
     .WithEnvironment("KC_HOSTNAME_STRICT", "false")
-    .WithEndpoint(6001, 8080, "keycloak", isExternal: true)
     .WithEnvironment("VIRTUAL_HOST", "id.overflow.local")
     .WithEnvironment("VIRTUAL_PORT", "8080");
 
@@ -65,6 +64,10 @@ var yarp = builder.AddYarp("gateway")
     .WithEndpoint(port: 8001, scheme: "http", targetPort: 8001, name: "gateway", isExternal: true)
     .WithEnvironment("VIRTUAL_HOST", "api.overflow.local")
     .WithEnvironment("VIRTUAL_PORT", "8001");
+
+var webapp = builder.AddJavaScriptApp("webapp", "../webapp")
+    .WithReference(keycloak)
+    .WithHttpEndpoint(env: "PORT", port: 3000);
 
 if (!builder.Environment.IsDevelopment())
 {
