@@ -8,15 +8,5 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/?password=P8.7%29DW6Vc%2BgE%7E9ByJF%21cf&amp;user=postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgres" uuid="541f817f-cb5c-4297-b78c-856caed817bf">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:61734/?password=P8.7%29DW6Vc%2BgE%7E9ByJF%21cf&amp;user=postgres</jdbc-url>
-      <jdbc-additional-properties>
-        <property name="aspireResourceId" value="postgres-xbrxnjgp" />
-      </jdbc-additional-properties>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
   </component>
 </project>

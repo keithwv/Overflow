@@ -22,7 +22,8 @@ await builder.UseWolverineWithRabbitMqAsync(opts =>
     opts.ApplicationAssembly = typeof(Program).Assembly;
 });
 
-var typesenseUri = builder.Configuration["services:typesense:typesense:0"];
+var typesenseUri = builder.Configuration["Typesense:Uri"] 
+    ?? builder.Configuration["services:typesense:typesense:0"];
 if (string.IsNullOrWhiteSpace(typesenseUri))
     throw new InvalidOperationException("Typesense URI not found in configuration");
 

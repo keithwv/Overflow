@@ -1,6 +1,7 @@
 import {Question} from "@/lib/types";
 import {Button} from "@heroui/button";
-import Link from "next/link";
+import {LinkComponent} from "@/components/LinkComponent";
+import {fuzzyTimeAgo} from "@/lib/util";
 
 type Props = {
     question: Question;
@@ -13,7 +14,7 @@ export default function QuestionDetailedHeader({question}: Props) {
                     {question.title}
                 </div>
                 <Button
-                    as={Link}
+                    as={LinkComponent}
                     href='/questions/ask'
                     color='secondary'
                     className='w-[20%]'
@@ -24,12 +25,12 @@ export default function QuestionDetailedHeader({question}: Props) {
             <div className='flex items-center gap-6'>
                 <div className='flex items-center gap-3'>
                     <span className='text-foreground-500'>Asked</span>
-                    <span>{question.createdAt}</span>
+                    <span>{fuzzyTimeAgo(question.createdAt)}</span>
                 </div>
                 {question.updatedAt && (
                     <div className='flex items-center gap-3'>
                         <span className='text-foreground-500'>Modified</span>
-                        <span>{question.updatedAt}</span>
+                        <span>{fuzzyTimeAgo(question.updatedAt)}</span>
                     </div>
                 )}
                 <div className='flex items-center gap-3'>

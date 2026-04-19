@@ -1,6 +1,4 @@
-'use client';
-
-import {getQuestionById} from "@/lib/actions/question-actions";
+import {getQuestionById}from "@/lib/actions/question-actions";
 import {notFound} from "next/navigation";
 import QuestionDetailedHeader from "@/app/questions/[id]/QuestionDetailedHeader";
 import QuestionContent from "@/app/questions/[id]/QuestionContent";
@@ -14,8 +12,9 @@ function AnswerHeader(props: { answerCount: number }) {
 
 export default async function QuestionDetailedPage({params}: { params: Params }) {
     const {id} = await params;
-    const question = await getQuestionById(id);
+    const { data: question, error} = await getQuestionById(id);
 
+    if(error) throw error;
     if (!question) return notFound();
     return (
         <div className='w-full'>

@@ -48,7 +48,7 @@ var questionService = builder.AddProject<Projects.QuestionService>("question-svc
 
 var searchService = builder.AddProject<Projects.SearchService>("search-svc")
     .WithEnvironment("typesense-api-key", typesenseApiKey)
-    .WithReference(typeSenseContainer)
+    .WithEnvironment("Typesense__Uri", typeSenseContainer)
     .WithReference(rabbitmq)
     .WaitFor(typesense)
     .WaitFor(rabbitmq);

@@ -23,3 +23,10 @@ export type Answer = {
     accepted: boolean
     questionId: string
 }
+
+export type Tag = {
+    id: string
+    name: string
+    slug: string
+    description: string
+}
