@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed10a1c2-937c-4e0a-ac86-d5843f9697fd" name="Changes" comment="End of section 7">
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/session/ErrorButtons.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/session/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/TagsHeader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/app/tags/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/components/nav/SearchInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/error-actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/actions/tag-actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/fetchClient.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/useTagStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/lib/util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Overflow/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Overflow.AppHost/AppHost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SearchService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/QuestionsHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/AnswerFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionDetailedHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/QuestionFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/app/questions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/Providers.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/components/nav/TopNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/actions/question-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/lib/types/index.ts" afterDir="false" />
-    </list>
+    <list default="true" id="ed10a1c2-937c-4e0a-ac86-d5843f9697fd" name="Changes" comment="End of section 8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +115,7 @@
       <workItem from="1776019462652" duration="1510000" />
       <workItem from="1776021877836" duration="288000" />
       <workItem from="1776022178682" duration="8453000" />
-      <workItem from="1776390966925" duration="10074000" />
+      <workItem from="1776390966925" duration="10523000" />
     </task>
     <task id="LOCAL-00001" summary="End of section 6">
       <option name="closed" value="true" />
@@ -172,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776023974593</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="End of section 8">
+      <option name="closed" value="true" />
+      <created>1776558196299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776558196299</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +169,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="End of section 6" />
     <MESSAGE value="End of section 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of section 7" />
+    <MESSAGE value="End of section 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of section 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
